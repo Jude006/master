@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real ass</title>
+    <link rel="stylesheet" href="../gitbash/real.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <p class="navbar">Welcome fill in the information to sign up for your Master card</p>
+    </nav>
+    <div class="container">
+        <div class="forms">
+            <p class="sign">Sign up  <i class='bx bxs-user'></i></p>
+
+            
+    
+                <div class="input-groups">
+                    <input type="text"required id="firstName">
+                    <label for="firstName"><i class='bx bxs-user'></i> Firstname:</label>
+                </div>
+    
+                <div class="input-groups">
+                    <input type="text"required id="lastName">
+                    <label for="lastName"><i class='bx bxs-user'></i> Firstname:</label>
+                </div>
+
+                <div class="input-groups">
+                    <input type="text"required id="accountNum">
+                    <label for="accountNum"><i class='bx bxs-user-account'></i>Account num:</label>
+                </div>
+
+                <div class="input-groups">
+                    <input type="text"required id="date">
+                    <label for="date">Date</label>
+                </div>
+                <div class="bankname"><img src="../gitbash/image.tt/access1.PNG" alt="" style="width: 100%;height: 100%;border-radius: 5px;"></div>
+                <div class="header">
+                    <div class="circle-box">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                <div class="arrow1" style="position: absolute;width: 150px;height: 20vh;margin-top: -190px;left: -160px;"><img src="../gitbash/image.tt/left arrow.png" alt="" style="width: 100%;height: 100%;"></div>
+                <div class="arrow1" style="position: absolute;width: 150px;height: 20vh;margin-top: -120px;left: -140px;"><img src="../gitbash/image.tt/right arrow.png" alt="" style="width: 100%;height: 100%;"></div>
+                    <img src="../gitbash/image.tt/Capture.PNG" alt="" style="margin-top: -200px;margin-left: 400px;position: absolute;">
+                    <img src="../gitbash/image.tt/logo.PNG" alt="" style="margin-top: -130px;margin-left: 420px;position: absolute;">
+                    <div id="chip"><img src="../gitbash/image.tt/table1.png" alt="" style="width: 100%;height: 100%;border-radius: 10px;"></div>
+                    <div id="first" style="position: absolute;"></div>
+                    <div id="account"  style="position: absolute;"></div>
+                    <div id="head"></div>
+                </div>
+                <button type="submit" role="button" id="btn"><span class="text1"><i class='bx bxs-paper-plane'></i> Submit</span></button>
+
+           
+
+        </div>
+    </div>
+
+
+
+          <script>
+        let cardName;
+        let firstName;
+        let lastName;
+        let accountNum;
+        let date;
+        let btn;
+        let head;
+        let account;
+        let first;
+        document.getElementById("btn").onclick = function(){
+            firstName = document.getElementById("firstName").value;
+            lastName = document.getElementById("lastName").value;
+        accountNum = document.getElementById("accountNum").value;
+            date = document.getElementById("date").value;
+            account = document.getElementById("account").textContent = accountNum;
+            head = document.getElementById("head").textContent = date;
+            first = document.getElementById("first").textContent = firstName + " "  +  lastName;
+
+
+            accountNum =   document.getElementById("accountNum") = prompt("Enter your account number:");
+if (accountNum.length >= 8) {
+    window.alert("Valid account: " + accountNum);
+} else {
+    window.alert("Invalid account number. number must be at least 8 characters long.");
+}
+
+        }
+    
+    </script>
+
+</body>
+</html>
